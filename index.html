@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale-1.0">
+	<title>Covid-19 Tracker</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="favicon" type="image" href="assets/line_globe.png">
+</head>
+<body>
+	<main>
+		<div class="top-align-center">
+			<div class="top-align-center-left">
+				<img src="assets/covid.png" id="img-01" alt="covid-image">
+			</div>
+			<div class="top-align-center-right">
+				<h1>COVID-19 <span style="color: limegreen;">TRACKER</span></h1>
+			</div>
+			<div class="top-search-bar">
+				<form id="covidform">
+					<input type="text" id="country" placeholder="Search for a country"/>
+					<input type="submit" value="SEARCH" id="btn-search"/>
+				</form>	
+			</div>
+		</div>
+		<div class="disp-row">
+			<div class="col-1">
+				<h2>Recorded Cases:-</h2>
+				<div>
+					<h6 id="rcase">--,---</h6>
+				</div>
+			</div>
+			<div class="col-2">
+				<h2>Recovered Patients:-</h2>
+				<div>
+					<h6 id="rpats">--,---</h6>
+				</div>
+			</div>
+			<div class="col-3">
+				<h2>Deaths:-</h2>
+				<div>
+					<h6 id="dths">--,---</h6>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+	<script src="js/app.js"></script>
+</html>

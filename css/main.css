@@ -1,0 +1,117 @@
+/*Styling the webpage*/
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "calibri";
+	overflow-x: hidden;
+}
+h1{
+	font-size: 50px;
+}
+h2{
+	font-size: 35px;
+	margin-left: 15px;
+}
+h6{
+	margin-left: 15px;
+	font-size: 30px;
+	margin-top: 20px;
+}
+.top-align-center{
+	text-align: center;
+	display: inline-flex;
+	align-items: center;
+	padding: 15px
+}
+#img-01{
+	height: 80px;
+	width: 80px;
+}
+.top-search-bar{
+	padding-left: 75px;
+}
+#country {
+	height: 40px;
+	width: 475px; 
+	padding-left: 25px;
+	border: 1px solid gray;
+	font-size: 20px;
+}
+#btn-search{
+	height: 40px;
+	width: 90px;
+	border: 1.5px solid limegreen;
+	font-size: 20px;
+	background-color: limegreen;
+	color: white;
+}
+#btn-search:hover{
+	background-color: lightgreen;
+	cursor: pointer;
+}
+.disp-row{
+	width: 100%;
+	padding-top: 100px;
+	display: flex;
+}
+.col-1,.col-2,.col-3{
+	width: 30%;
+	height: 200px;
+	color: white;
+	border-radius: 10px;
+	float: left;
+	margin-left: 1.66%;
+	padding: 5px;
+}
+.col-1{
+	background-color: royalblue;
+}
+.col-2{
+	background-color: limegreen;
+}
+.col-3{
+	background-color: red;
+}
+/*media query for big screens like tablets*/
+@media only screen and (max-width: 768px){
+	*{
+		overflow-x: hidden;
+	}
+	.top-align-center{
+		display: block;
+	}
+	.top-search-bar{
+		padding: 0;
+	}
+	#country{
+		width: 300px;
+	}
+	.disp-row{
+		display: block;
+		padding: 15px;
+	}
+	.col-1,.col-2,.col-3{
+		float: none;
+		margin-left: 0;
+		padding: 0;
+		width: 94%;
+		margin-bottom: 20px;
+	}
+}
+/*media query for small screen like mobile phones*/
+@media only screen and (max-width: 450px){
+	#country{
+		width: 220px;
+		height: 35px;
+		font-size: 18px;
+	}
+	#btn-search{
+		width: 60px;
+		height: 35px;
+		font-size: 16px;
+	}
+	.disp-row{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
